@@ -9,13 +9,11 @@ export function SiteFooter() {
       <div className="container-x grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
         <div className="lg:col-span-1">
-          <div className="inline-flex rounded-xl bg-white px-3 py-2">
-            <img
-              src="/images/waterman/waterman-logo.png"
-              alt="Waterman Family Dentistry"
-              className="h-11 w-auto"
-            />
-          </div>
+          <img
+            src="/images/waterman/waterman-logo-light.png"
+            alt="Waterman Family Dentistry"
+            className="h-16 w-auto"
+          />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/65">
             Gentle, personalized family, cosmetic and restorative dentistry with Dr. Jennifer
             Waterman — proudly serving Virginia Beach since {business.since}.
