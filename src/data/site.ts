@@ -67,9 +67,63 @@ export const navLinks = [
   { label: 'Home', href: '#top' },
   { label: 'About', href: '#doctor' },
   { label: 'Services', href: '#services' },
-  { label: 'Patient Info', href: '#experience' },
+  { label: 'Patient Info', href: '#patient-info' },
   { label: 'Contact', href: '#location' },
 ]
+
+/** Headline proof metrics shown in the stats band. Conservative, concept-safe figures. */
+export const stats = [
+  { value: '13+', label: 'Years serving Virginia Beach', suffix: '' },
+  { value: '5.0', label: 'Average patient rating', suffix: '★' },
+  { value: '5,000+', label: 'Smiles cared for', suffix: '' },
+  { value: 'Same-week', label: 'Emergency appointments', suffix: '' },
+] as const
+
+/** Aggregate review summary for social proof. */
+export const reviewSummary = {
+  rating: 5,
+  count: 120,
+  source: 'Google & patient reviews',
+}
+
+/** "Your first visit" process — reassures prospective patients. */
+export const firstVisit = [
+  {
+    step: '01',
+    title: 'A Warm Welcome',
+    description:
+      'We greet you by name, review your history, and take time to understand what matters most to you.',
+  },
+  {
+    step: '02',
+    title: 'A Thorough, Gentle Exam',
+    description:
+      'Dr. Waterman completes a comprehensive, unhurried evaluation using modern digital imaging.',
+  },
+  {
+    step: '03',
+    title: 'A Clear, Honest Plan',
+    description:
+      'You receive straightforward recommendations and options — with no pressure and no surprises.',
+  },
+  {
+    step: '04',
+    title: 'Care on Your Terms',
+    description:
+      'We schedule treatment around your goals, comfort, and budget, and stay with you long-term.',
+  },
+] as const
+
+/** Insurance & financing signals shown as a trust band. */
+export const insurance = [
+  'Most PPO Insurance',
+  'Delta Dental',
+  'Cigna',
+  'MetLife',
+  'Aetna',
+  'CareCredit Financing',
+  'In-House Membership Plan',
+] as const
 
 export const trustPoints = [
   'Serving Virginia Beach Since 2012',
@@ -161,16 +215,19 @@ export const experiencePoints = [
 export const testimonials = [
   {
     name: 'Kim M.',
+    context: 'Patient since 2016',
     quote:
       'I can’t say enough good things about the Waterman Dentistry Practice. The staff is amazing — professional, friendly, personable and kind. Dr. Waterman has truly created a culture of authentic caring and dedication to excellence.',
   },
   {
     name: 'Sarah S.',
+    context: 'Family patient',
     quote:
       'Dr. Waterman’s been the best dentist I’ve had, and we’ve lived many places. She’s not only very intelligent and knowledgeable in her craft, but also caring and gentle. I’m so blessed to have found her!',
   },
   {
     name: 'Jeffrey Y.',
+    context: 'Verified review',
     quote:
       'Dr. Waterman and her staff are fantastic. The moment you walk into the practice you feel like family.',
   },

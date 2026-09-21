@@ -31,8 +31,8 @@ export function WelcomeSection() {
         </div>
 
         <div ref={left.ref} className={`order-1 lg:order-2 ${left.className}`}>
-          <span className="eyebrow">Welcome</span>
-          <h2 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-harbor-900">
+          <span className="eyebrow-chip">Welcome</span>
+          <h2 className="section-title mt-5">
             Dental Care Built Around You
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-charcoal/75">

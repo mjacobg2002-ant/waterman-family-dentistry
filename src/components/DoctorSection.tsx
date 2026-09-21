@@ -43,8 +43,8 @@ export function DoctorSection() {
 
         {/* Story */}
         <div ref={copy.ref} className={copy.className}>
-          <span className="eyebrow">Meet Your Dentist</span>
-          <h2 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-harbor-900">
+          <span className="eyebrow-chip">Meet Your Dentist</span>
+          <h2 className="section-title mt-5">
             Meet Dr. Jennifer Waterman
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-charcoal/75">

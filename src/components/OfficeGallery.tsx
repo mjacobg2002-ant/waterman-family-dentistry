@@ -37,8 +37,8 @@ export function OfficeGallery() {
     <section className="bg-ivory py-20 lg:py-28">
       <div className="container-x">
         <div ref={head.ref} className={`max-w-2xl ${head.className}`}>
-          <span className="eyebrow">Our Office</span>
-          <h2 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-harbor-900">
+          <span className="eyebrow-chip">Our Office</span>
+          <h2 className="section-title mt-5">
             See Our Modern Dental Office
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-charcoal/70">

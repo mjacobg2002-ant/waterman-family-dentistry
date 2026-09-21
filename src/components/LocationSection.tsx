@@ -9,8 +9,8 @@ export function LocationSection() {
     <section id="location" className="scroll-mt-24 bg-cream py-20 lg:py-28">
       <div className="container-x">
         <div ref={reveal.ref} className={`max-w-2xl ${reveal.className}`}>
-          <span className="eyebrow">Visit Us</span>
-          <h2 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-harbor-900">
+          <span className="eyebrow-chip">Visit Us</span>
+          <h2 className="section-title mt-5">
             Conveniently in Virginia Beach
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-charcoal/70">
