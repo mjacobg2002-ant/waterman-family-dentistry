@@ -24,14 +24,14 @@ export function SiteHeader() {
     >
       <div
         className={`container-x flex items-center justify-between transition-all duration-300 ${
-          scrolled ? 'h-20' : 'h-24'
+          scrolled ? 'h-24' : 'h-28'
         }`}
       >
         <a href="#top" className="flex items-center" aria-label="Waterman Family Dentistry — home">
           <img
             src={scrolled ? '/images/waterman/waterman-logo.png' : '/images/waterman/waterman-logo-light.png'}
             alt="Waterman Family Dentistry — A Division of Atlantic Dental Care, PLC"
-            className={`w-auto transition-all duration-300 ${scrolled ? 'h-16' : 'h-[4.5rem]'}`}
+            className={`w-auto transition-all duration-300 ${scrolled ? 'h-20' : 'h-24'}`}
             width={900}
             height={301}
           />
