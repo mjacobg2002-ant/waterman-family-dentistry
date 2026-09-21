@@ -8,11 +8,11 @@ export function HeroSection() {
       <img
         src="/images/waterman/va-beach-hero-poster.jpg"
         alt="Aerial view of the Virginia Beach oceanfront at sunrise"
-        className="absolute inset-0 -z-20 h-full w-full object-cover"
+        className="absolute inset-0 -z-20 h-full w-full scale-105 object-cover blur-[3px]"
         fetchPriority="high"
       />
       <video
-        className="hero-video absolute inset-0 -z-20 h-full w-full object-cover"
+        className="hero-video absolute inset-0 -z-20 h-full w-full scale-105 object-cover blur-[3px]"
         autoPlay
         muted
         loop
