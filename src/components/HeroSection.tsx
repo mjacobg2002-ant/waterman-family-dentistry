@@ -31,7 +31,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="container-x relative z-10 flex min-h-[92vh] items-center pb-16 pt-32 sm:pt-36 lg:min-h-screen">
-        <div className="max-w-2xl rounded-[2rem] bg-harbor-900/20 p-7 text-white shadow-lift ring-1 ring-white/10 backdrop-blur-[3px] sm:p-9 lg:p-12">
+        <div className="max-w-2xl text-white">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
             <MapPin className="h-3.5 w-3.5 text-champagne" aria-hidden="true" />
             Virginia Beach · Since {business.since}

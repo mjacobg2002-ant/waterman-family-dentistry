@@ -28,19 +28,13 @@ export function SiteHeader() {
         }`}
       >
         <a href="#top" className="flex items-center" aria-label="Waterman Family Dentistry — home">
-          <span
-            className={`inline-flex rounded-xl transition-all duration-300 ${
-              scrolled ? '' : 'bg-white/90 px-3 py-1.5 shadow-sm'
-            }`}
-          >
-            <img
-              src="/images/waterman/waterman-logo.png"
-              alt="Waterman Family Dentistry — A Division of Atlantic Dental Care, PLC"
-              className={`w-auto transition-all duration-300 ${scrolled ? 'h-12' : 'h-11'}`}
-              width={900}
-              height={301}
-            />
-          </span>
+          <img
+            src="/images/waterman/waterman-logo.png"
+            alt="Waterman Family Dentistry — A Division of Atlantic Dental Care, PLC"
+            className={`w-auto transition-all duration-300 ${scrolled ? 'h-12' : 'h-12'}`}
+            width={900}
+            height={301}
+          />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
