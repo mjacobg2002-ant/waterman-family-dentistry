@@ -25,15 +25,13 @@ export function HeroSection() {
 
       {/* Legibility scrim — darker toward the left where the copy sits */}
       <div
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-harbor-900/95 via-harbor-900/80 to-harbor-900/55"
+        className="absolute inset-0 -z-10 bg-gradient-to-r from-harbor-900/92 via-harbor-900/62 to-harbor-900/25"
         aria-hidden="true"
       />
       <div
-        className="absolute inset-0 -z-10 bg-gradient-to-t from-harbor-900/85 via-harbor-900/25 to-harbor-900/45"
+        className="absolute inset-0 -z-10 bg-gradient-to-t from-harbor-900/80 via-transparent to-harbor-900/30"
         aria-hidden="true"
       />
-      {/* Overall tint to guarantee contrast across the whole frame */}
-      <div className="absolute inset-0 -z-10 bg-harbor-900/25" aria-hidden="true" />
 
       <div className="container-x flex min-h-[86vh] items-center py-20 lg:min-h-[88vh]">
         <div className="max-w-2xl text-white">
@@ -45,14 +43,14 @@ export function HeroSection() {
           <h1 className="mt-6 font-serif text-[clamp(2.7rem,6.4vw,4.75rem)] font-semibold leading-[1.02] tracking-[-0.015em] text-white [text-shadow:0_2px_30px_rgba(9,20,34,0.45)]">
             Thoughtful Dentistry.
             <span
-              className="mt-1 block bg-clip-text text-transparent"
+              className="mt-1 block pb-[0.12em] leading-[1.12] bg-clip-text text-transparent"
               style={{ backgroundImage: 'linear-gradient(115deg,#8ff0e4 0%,#e7cf96 90%)' }}
             >
               Lifelong Relationships.
             </span>
           </h1>
 
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-white/85">
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-white [text-shadow:0_1px_12px_rgba(9,20,34,0.75)]">
             Precise, gentle dental care centered around your comfort, your goals, and the
             long-term health of your smile — with {business.doctor} on the Virginia Beach oceanfront.
           </p>
@@ -69,28 +67,28 @@ export function HeroSection() {
           </div>
 
           {/* Rating + credibility row */}
-          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
+          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 [text-shadow:0_1px_10px_rgba(9,20,34,0.7)]">
             <div className="flex items-center gap-3">
               <div className="flex" aria-hidden="true">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="h-[18px] w-[18px] fill-champagne text-champagne" />
                 ))}
               </div>
-              <p className="text-sm text-white/80">
+              <p className="text-sm text-white">
                 <span className="font-semibold text-white">{reviewSummary.rating.toFixed(1)}</span> from{' '}
                 {reviewSummary.count}+ patients
               </p>
             </div>
-            <span className="hidden h-5 w-px bg-white/25 sm:block" aria-hidden="true" />
-            <p className="inline-flex items-center gap-2 text-sm font-medium text-white/80">
+            <span className="hidden h-5 w-px bg-white/30 sm:block" aria-hidden="true" />
+            <p className="inline-flex items-center gap-2 text-sm font-medium text-white">
               <Award className="h-4 w-4 text-champagne" aria-hidden="true" />
               West Point graduate &amp; Army veteran
             </p>
           </div>
 
-          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-white/15 pt-6">
+          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-white/20 pt-6 [text-shadow:0_1px_10px_rgba(9,20,34,0.7)]">
             {heroTrustPoints.map((point) => (
-              <li key={point} className="inline-flex items-center gap-2 text-sm font-medium text-white/85">
+              <li key={point} className="inline-flex items-center gap-2 text-sm font-medium text-white">
                 <ShieldCheck className="h-4 w-4 text-champagne" aria-hidden="true" />
                 {point}
               </li>
