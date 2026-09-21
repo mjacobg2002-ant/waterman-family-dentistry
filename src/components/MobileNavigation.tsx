@@ -79,7 +79,7 @@ export function MobileNavigation({ open, onClose }: Props) {
           <img
             src="/images/waterman/waterman-logo.png"
             alt="Waterman Family Dentistry"
-            className="h-9 w-auto"
+            className="h-12 w-auto"
           />
           <button
             ref={closeRef}

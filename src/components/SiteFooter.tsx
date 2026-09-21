@@ -13,7 +13,7 @@ export function SiteFooter() {
             <img
               src="/images/waterman/waterman-logo.png"
               alt="Waterman Family Dentistry"
-              className="h-8 w-auto"
+              className="h-11 w-auto"
             />
           </div>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/65">
