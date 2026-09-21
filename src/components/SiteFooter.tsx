@@ -12,7 +12,7 @@ export function SiteFooter() {
           <img
             src="/images/waterman/waterman-logo-light.png"
             alt="Waterman Family Dentistry"
-            className="h-16 w-auto"
+            className="h-24 w-auto"
           />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/65">
             Gentle, personalized family, cosmetic and restorative dentistry with Dr. Jennifer
