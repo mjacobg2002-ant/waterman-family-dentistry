@@ -77,7 +77,7 @@ export function MobileNavigation({ open, onClose }: Props) {
       >
         <div className="flex items-center justify-between border-b border-black/5 px-5 py-4">
           <img
-            src="/images/waterman/waterman-logo.webp"
+            src="/images/waterman/waterman-logo.png"
             alt="Waterman Family Dentistry"
             className="h-9 w-auto"
           />

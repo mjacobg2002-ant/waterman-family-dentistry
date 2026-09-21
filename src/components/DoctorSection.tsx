@@ -29,8 +29,8 @@ export function DoctorSection() {
                 height={640}
               />
             </div>
-            {/* Signature-style accent card */}
-            <div className="absolute -bottom-5 -right-2 max-w-[15rem] rounded-2xl bg-harbor-900 p-5 text-white shadow-soft sm:-right-5">
+            {/* Signature-style accent card — sits below the photo on mobile, overlays on large screens */}
+            <div className="mt-4 rounded-2xl bg-harbor-900 p-5 text-white shadow-soft lg:absolute lg:-bottom-5 lg:right-0 lg:mt-0 lg:max-w-[15rem] xl:-right-5">
               <p className="font-serif text-lg italic leading-snug text-white/95">
                 Care and integrity, in every interaction.
               </p>

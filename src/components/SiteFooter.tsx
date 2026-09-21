@@ -11,7 +11,7 @@ export function SiteFooter() {
         <div className="lg:col-span-1">
           <div className="inline-flex rounded-xl bg-white px-3 py-2">
             <img
-              src="/images/waterman/waterman-logo.webp"
+              src="/images/waterman/waterman-logo.png"
               alt="Waterman Family Dentistry"
               className="h-8 w-auto"
             />

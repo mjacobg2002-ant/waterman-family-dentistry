@@ -4,18 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Derived from the Waterman logomark (green sun over blue wave) and the
-        // navy + warm-neutral office interior.
+        // Aqua-teal brand family, matching watermandentistry.com (brand accent #21b6a8).
+        // Deeper 600/700 shades keep white-on-color buttons + teal-on-cream text
+        // accessible; 500 carries the exact vibrant brand aqua for graphic accents.
         evergreen: {
-          DEFAULT: '#1d5c4a', // primary brand + actions
-          50: '#eef6f2',
-          100: '#d6eae2',
-          200: '#b3d4c6',
-          500: '#25715a',
-          600: '#1d5c4a',
-          700: '#164838',
-          800: '#123a2d',
-          900: '#0e2e24',
+          DEFAULT: '#0f766e', // primary brand + actions (deep aqua teal)
+          50: '#f0fdfa',
+          100: '#ccfbf1',
+          200: '#99f6e4',
+          500: '#21b6a8', // exact Waterman brand aqua teal
+          600: '#0f766e',
+          700: '#115e59',
+          800: '#134e4a',
+          900: '#0f3d3a',
         },
         harbor: {
           DEFAULT: '#1e3a5f', // deep navy, mirrors the office cabinetry
