@@ -11,6 +11,11 @@
     :root {
       scroll-behavior: auto;
     }
+
+    /* Respect reduced-motion: drop the background video, keep the static poster */
+    .hero-video {
+      display: none !important;
+    }
   }
 
   body {

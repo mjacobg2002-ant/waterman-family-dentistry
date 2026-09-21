@@ -19,6 +19,16 @@ practices are used.
 | `virginia-beach-pier.jpg` | https://www.watermandentistry.com/wp-content/uploads/2021/05/virginia-beach.jpg | 2124×831 | Appointment CTA background |
 | `king-neptune-virginia-beach.png` | https://www.watermandentistry.com/wp-content/uploads/2021/05/Untitled-design-25-1.png | 600×500 | (available local landmark, not currently placed) |
 
+## Stock footage (hero background video)
+The homepage hero uses a Virginia Beach oceanfront aerial. This is the ONLY non-first-party
+asset on the site — a royalty-free clip under the **Pexels License** (free for commercial use,
+no attribution required). Trimmed to ~14s and re-encoded locally.
+
+| Local filename | Source | Dimensions | Used on homepage |
+|---|---|---|---|
+| `va-beach-hero.mp4` | Pexels video #32132552 "Aerial View of Coastal City and Beach at Sunrise" (https://www.pexels.com/video/aerial-view-of-coastal-city-and-beach-at-sunrise-32132552/) — 1920×1080 source, H.264, ~2.8 MB | 1920×1080 | Hero background video |
+| `va-beach-hero-poster.jpg` | Frame extracted from the clip above | 1920×1080 | Hero poster + reduced-motion fallback |
+
 ## Images intentionally NOT used
 - **Old exterior photo** (`IMG_2439.jpg`) shows the previous "525" signage / former Great
   Neck Road location. Excluded to avoid the outdated address per the brief.
