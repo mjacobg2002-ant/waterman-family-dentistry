@@ -5,14 +5,25 @@ import { getOfficeStatus } from '../lib/officeStatus'
 
 export function TopUtilityBar() {
   const [status, setStatus] = useState(() => getOfficeStatus())
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     const id = setInterval(() => setStatus(getOfficeStatus()), 60_000)
-    return () => clearInterval(id)
+    const onScroll = () => setScrolled(window.scrollY > 12)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      clearInterval(id)
+      window.removeEventListener('scroll', onScroll)
+    }
   }, [])
 
   return (
-    <div className="hidden bg-harbor-900 text-white/90 md:block">
+    <div
+      className={`hidden text-white/90 transition-colors duration-300 md:block ${
+        scrolled ? 'bg-harbor-900' : 'bg-transparent [text-shadow:0_1px_10px_rgba(9,20,34,0.6)]'
+      }`}
+    >
       <div className="container-x flex h-10 items-center justify-between text-[13px]">
         <div className="flex items-center gap-6">
           <a
@@ -22,7 +33,7 @@ export function TopUtilityBar() {
             <Phone className="h-3.5 w-3.5 text-champagne" aria-hidden="true" />
             {business.phoneDisplay}
           </a>
-          <span className="inline-flex items-center gap-2 text-white/75">
+          <span className="inline-flex items-center gap-2 text-white/80">
             <MapPin className="h-3.5 w-3.5 text-champagne" aria-hidden="true" />
             {business.address.short}, {business.address.city}, {business.address.state}
           </span>
@@ -35,7 +46,7 @@ export function TopUtilityBar() {
             }`}
             aria-hidden="true"
           />
-          <span className="text-white/85">{status.label}</span>
+          <span className="text-white/90">{status.label}</span>
         </span>
       </div>
     </div>

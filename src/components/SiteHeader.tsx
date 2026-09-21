@@ -16,25 +16,31 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`sticky top-0 z-40 border-b transition-all duration-300 ${
+      className={`border-b transition-all duration-300 ${
         scrolled
-          ? 'border-black/5 bg-cream/95 shadow-[0_2px_20px_-12px_rgba(18,35,58,0.25)] backdrop-blur'
-          : 'border-transparent bg-cream/80 backdrop-blur-sm'
+          ? 'border-black/5 bg-cream shadow-[0_2px_20px_-12px_rgba(18,35,58,0.25)]'
+          : 'border-transparent bg-transparent'
       }`}
     >
       <div
         className={`container-x flex items-center justify-between transition-all duration-300 ${
-          scrolled ? 'h-20' : 'h-24'
+          scrolled ? 'h-16' : 'h-20'
         }`}
       >
         <a href="#top" className="flex items-center" aria-label="Waterman Family Dentistry — home">
-          <img
-            src="/images/waterman/waterman-logo.png"
-            alt="Waterman Family Dentistry — A Division of Atlantic Dental Care, PLC"
-            className={`w-auto transition-all duration-300 ${scrolled ? 'h-12' : 'h-16'}`}
-            width={900}
-            height={301}
-          />
+          <span
+            className={`inline-flex rounded-xl transition-all duration-300 ${
+              scrolled ? '' : 'bg-white/90 px-3 py-1.5 shadow-sm'
+            }`}
+          >
+            <img
+              src="/images/waterman/waterman-logo.png"
+              alt="Waterman Family Dentistry — A Division of Atlantic Dental Care, PLC"
+              className={`w-auto transition-all duration-300 ${scrolled ? 'h-12' : 'h-11'}`}
+              width={900}
+              height={301}
+            />
+          </span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
@@ -42,7 +48,11 @@ export function SiteHeader() {
             <a
               key={link.href}
               href={link.href}
-              className="relative text-sm font-semibold text-charcoal/80 transition-colors hover:text-evergreen-700 after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:rounded-full after:bg-evergreen-600 after:transition-all hover:after:w-full"
+              className={`relative text-sm font-semibold transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:rounded-full after:bg-evergreen-500 after:transition-all hover:after:w-full ${
+                scrolled
+                  ? 'text-charcoal/80 hover:text-evergreen-700'
+                  : 'text-white/90 [text-shadow:0_1px_10px_rgba(9,20,34,0.6)] hover:text-white'
+              }`}
             >
               {link.label}
             </a>
@@ -55,7 +65,9 @@ export function SiteHeader() {
 
         <button
           onClick={() => setMenuOpen(true)}
-          className="grid h-11 w-11 place-items-center rounded-full text-charcoal hover:bg-black/5 md:hidden"
+          className={`grid h-11 w-11 place-items-center rounded-full transition-colors md:hidden ${
+            scrolled ? 'text-charcoal hover:bg-black/5' : 'bg-white/10 text-white ring-1 ring-white/30 backdrop-blur-sm hover:bg-white/20'
+          }`}
           aria-label="Open menu"
           aria-expanded={menuOpen}
         >

@@ -26,8 +26,11 @@ export default function App() {
         Skip to content
       </a>
 
-      <TopUtilityBar />
-      <SiteHeader />
+      {/* Fixed, transparent overlay nav — the hero video shows through behind it */}
+      <div className="fixed inset-x-0 top-0 z-50">
+        <TopUtilityBar />
+        <SiteHeader />
+      </div>
 
       <main className="pb-16 md:pb-0">
         <HeroSection />
