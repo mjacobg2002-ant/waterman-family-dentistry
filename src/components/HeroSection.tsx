@@ -8,11 +8,11 @@ export function HeroSection() {
       <img
         src="/images/waterman/va-beach-hero-poster.jpg"
         alt="Aerial view of the Virginia Beach oceanfront at sunrise"
-        className="absolute inset-0 -z-20 h-full w-full scale-105 object-cover blur-[3px]"
+        className="absolute inset-0 -z-20 h-full w-full object-cover"
         fetchPriority="high"
       />
       <video
-        className="hero-video absolute inset-0 -z-20 h-full w-full scale-105 object-cover blur-[3px]"
+        className="hero-video absolute inset-0 -z-20 h-full w-full object-cover"
         autoPlay
         muted
         loop
@@ -25,13 +25,15 @@ export function HeroSection() {
 
       {/* Legibility scrim — darker toward the left where the copy sits */}
       <div
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-harbor-900/92 via-harbor-900/62 to-harbor-900/25"
+        className="absolute inset-0 -z-10 bg-gradient-to-r from-harbor-900/95 via-harbor-900/80 to-harbor-900/55"
         aria-hidden="true"
       />
       <div
-        className="absolute inset-0 -z-10 bg-gradient-to-t from-harbor-900/80 via-transparent to-harbor-900/30"
+        className="absolute inset-0 -z-10 bg-gradient-to-t from-harbor-900/85 via-harbor-900/25 to-harbor-900/45"
         aria-hidden="true"
       />
+      {/* Overall tint to guarantee contrast across the whole frame */}
+      <div className="absolute inset-0 -z-10 bg-harbor-900/25" aria-hidden="true" />
 
       <div className="container-x flex min-h-[86vh] items-center py-20 lg:min-h-[88vh]">
         <div className="max-w-2xl text-white">
