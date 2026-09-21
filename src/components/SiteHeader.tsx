@@ -29,9 +29,9 @@ export function SiteHeader() {
       >
         <a href="#top" className="flex items-center" aria-label="Waterman Family Dentistry — home">
           <img
-            src="/images/waterman/waterman-logo.png"
+            src={scrolled ? '/images/waterman/waterman-logo.png' : '/images/waterman/waterman-logo-light.png'}
             alt="Waterman Family Dentistry — A Division of Atlantic Dental Care, PLC"
-            className={`w-auto transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'}`}
+            className={`w-auto transition-all duration-300 ${scrolled ? 'h-16' : 'h-[4.5rem]'}`}
             width={900}
             height={301}
           />
